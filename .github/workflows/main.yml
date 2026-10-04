@@ -12,6 +12,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up headless display and audio
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xvfb
+          echo "SDL_VIDEODRIVER=dummy" >> $GITHUB_ENV
+          echo "SDL_AUDIODRIVER=dummy" >> $GITHUB_ENV
+
       - name: Install Ren'Py
         uses: Ayowel/renpy-setup-action@v3
         with:
