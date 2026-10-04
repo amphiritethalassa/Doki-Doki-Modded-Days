@@ -183,7 +183,6 @@ label mod_start:
     n 4o "I never said it had to be cutesy! I just.. don't want you turning our mod into some creepy nightmare!"
     m 5b "You two, seperate."
     m 5b "We have enough trouble as is."
-
-    n 1i
+    n 1i "Ugh! fine! hmph! im not a dere, tsun tsundere!!!"
 
     return
