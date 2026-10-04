@@ -47,6 +47,8 @@ label mod_start:
 
     show monika 4m at t21
     show natsuki 5f at t22
+    hide yuri
+    hide sayori
     n 5e "Months?!"
     n 5v "Monika, we're supposed to actually finish this thing!"
 
@@ -57,6 +59,7 @@ label mod_start:
     show monika 3a at t31
     show natsuki 5g at t32
     show sayori 4k at t33
+    hide yuri
     s 4i "I mean.. I think it sounds really fun! But.."
     s 4i "Forever is a really long time, Monika!"
 
@@ -77,7 +80,7 @@ label mod_start:
     show natsuki 4s at t42
     show sayori 5a at t43
     show yuri 4h at t44
-    y 4f "But that would mean we'd have to present how easy it is for us to disagree on something."
+    y 4a "But that would mean we'd have to present how easy it is for us to disagree on something."
 
     show yuri 1e at t44
     s 5a "But that's what makes it fun! We could all have different ideas and see which ones we actually agree on!"
@@ -94,7 +97,7 @@ label mod_start:
     n 2d "Okay, okay! Mine's pretty simple. What if we make a cooking mod? We could add recipes and have the player cooking with us!"
 
     show natsuki 2a at t42
-    y 4f "I expected that from a baker like you."
+    y 4a "I expected that from a baker like you."
 
     show yuri 1e at t44
     n 1e "Hey, what's wrong with that?! Atleast my idea would actually be fun!"
@@ -102,5 +105,85 @@ label mod_start:
     show natsuki 1g at t42
     m 1i "Okay, Yuri."
     m 1i "It isn't the time to argue."
+
+    show yuri 4c at h44
+    m 1a "Anyway.. Natsuki, have anything else?"
+    n 2d "Well, we could have different recipes for each of us, and the player could bake with all of us! I think it'd be pretty fun."
+    y 4d "You said that already.."
+    n 1e "I know! I'm just explaining it better!"
+    m 3a "Okay, seems good. Yuri, you're next."
+
+    show yuri 4c at h44
+    y "I suppose it should be a horror mod of us trying to solve mysteries together."
+
+    show yuri 4a at t44
+    n 4d "Heh, I knew you would pick that—"
+    m 4b "Okay, everyone! Time to choose which idea sounds best!"
+
+    show natsuki 4g at h42
+    show monika 4a at t41
+    n 1q "Well, I already know which one I'm voting for."
+    n 1q "Obviously mine."
+
+    show natsuki 1s at h42
+    s 5a "Hmm.."
+    s 4l "I think I like my idea the most too! It'd be really fun seeing what we come up with together!"
+
+    show sayori 4a at h43
+    y 3e "I think my idea is too."
+    s 4b "Ehehe~ So that means we're all picking our own ideas..."
+
+    show sayori 4a at h43
+    m 3b "Well, that can't be.. I guess we could search it up on this AI called ChatFun and let it guess?"
+    n 4e "Wait, we're seriously letting some robot decide what we make?"
+    m 3m "We have nothing else, Natsuki."
+    n 4e "Ugh, fine.. I guess we can."
+    y 4a "Instead of using AI, why don't we ask real people on the internet with a poll?"
+    s 4l "Oh! Good idea! We could let everyone vote for their favorite!"
+    m 1a "Sounds good!"
+    n 4e "Yeah, a poll sounds way better than letting a chatbot decide for us."
+    m 2b "Okay, I typed it in! We'll go with the majority."
+    y 3o "Oh.. It seems they're picking none and.."
+    y 43 "Saying all are boring.."
+    n 4p "WHAT?! How can they say they're all boring?!"
+    n 4o "We spent all that time coming up with them!"
+    m 5b "They say it should be a mod where I don't mess with anything and where I could have a route."
+    s 5b "Oh! So they want you to have your own route instead, that could be fun!"
+    y 4b "I'm in."
+    n 1q "...Huh. Actually, I'm okay with that too."
+    m 4b "Okay, everyone! Since we already have our idea, let's create!"
+    s 4r "Yeah! Let's do it! Ehehe~ I can't wait to see what we make together!"
+    m 4a "Maybe the plot first, we need it for coding."
+    n 5q "Well, duh. We can't just start throwing stuff into the mod without knowing what we're actually making."
+    y 4i "Okay.. Are we going to make it or not?"
+    n 5q "Yeah, yeah! We're making it.. Just give us all a second to figure out what the heck we're even doing."
+    m 2b "So.. Any ideas?"
+    s 5b "Hmm.. Maybe we should start with something simple? We can always make it crazier after!"
+    y 2h "I agree with Sayori, it's way less complicated to do so."
+    n 2d "Well.. If we're making it simple, then let's atleast make it interesting!"
+    y 3h "Natsuki, you're just stating the obvious to make it look like you're doing something useful here."
+    n 1f "Oh, shut up! Atleast I'm actually contributing instead of just sitting there judging everyone else's ideas!!"
+    m 5b "Okay, you two! No fighting, we all are a team here."
+    s 4h "Monika's right! We should work together instead of fighting!"
+    y 1k "Monika, can't we add just a bit of horror?"
+    y 1k "The original idea is uninteresting, nobody would play it."
+    n 1f "Hey! I thought we were keeping it simple! And not everything has to be scary just to make it interesting!"
+    y 1k "The original idea was boring."
+    n 1f "Maybe to you! We don't need to turn it into some creepy mystery just because you think it's boring."
+
+    show natsuki 4o h42
+    $ style.say_dialogue = style.edited #Glitch Font Starts
+
+    y y4 "Natsuki, don't you have a father to whine to?"
+
+    $ style.say_dialogue = style.normal #Glitch Font Ends
+
+    n 4p "Don't bring my dad into this! What does he have to do with our stupid mod, anyway?!"
+    y y4 "Just because you have to make everything overly CUTESY doesn't mean it has to be."
+    n 4o "I never said it had to be cutesy! I just.. don't want you turning our mod into some creepy nightmare!"
+    m 5b "You two, seperate."
+    m 5b "We have enough trouble as is."
+
+    n 1i
 
     return
