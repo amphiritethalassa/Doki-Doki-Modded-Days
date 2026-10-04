@@ -16,7 +16,7 @@ jobs:
         uses: Ayowel/renpy-setup-action@v3
         with:
           action: install
-          version: "8.5.3"
+          version: "6.99.12"
 
       - name: Build Windows version
         uses: Ayowel/renpy-setup-action@v3
