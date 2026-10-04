@@ -3,7 +3,7 @@ init -100 python:
 
 label mod_start:
 
-    scene club_day
+    scene bg club_day
     show monika 1a at t31
 
     m "Welcome to my DDLC mod!"
