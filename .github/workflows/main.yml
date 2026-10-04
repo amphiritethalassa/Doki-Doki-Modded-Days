@@ -1,0 +1,32 @@
+name: Build Doki Doki Modded Days
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Ren'Py
+        uses: Ayowel/renpy-setup-action@v3
+        with:
+          action: install
+          version: "8.5.3"
+
+      - name: Build Windows version
+        uses: Ayowel/renpy-setup-action@v3
+        with:
+          action: distribute
+          packages: win
+          out_dir: build
+
+      - name: Upload Windows build
+        uses: actions/upload-artifact@v4
+        with:
+          name: Doki-Doki-Modded-Days-Windows
+          path: build/
