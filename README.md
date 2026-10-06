@@ -8,4 +8,5 @@ We cannot distribute this file because we respect the guidelines.
 3. Place our mod folder into the game folder. (DDLC/game/Doki Doki Modded Days)
 
 P.S: You have to extract the mod zip.
+
 Download our mod here (UNFINISHED): [Releases](https://github.com/amphiritethalassa/Doki-Doki-Modded-Days/releases)
